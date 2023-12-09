@@ -6,6 +6,6 @@ def find_matches(text):
     return centerLetter
 
 
-with open('level3input.txt', 'r') as file:
+with open('supportfiles/level3input.txt', 'r') as file:
     input = file.read()
 print(find_matches(input))

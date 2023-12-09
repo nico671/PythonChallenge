@@ -1,6 +1,6 @@
 from PIL import Image
 import re
-im = Image.open("oxygen.png")
+im = Image.open("supportfiles/oxygen.png")
 
 pixel_row = [im.getpixel((x, im.height / 2)) for x in range(im.width)]
 

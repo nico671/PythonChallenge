@@ -1,8 +1,10 @@
 # first needed to download the zip file from the website (change the end of the url from html to zip)
 
 import zipfile, re
+import os
 
-zip = zipfile.ZipFile("/Users/nicocarbone/Desktop/PythonChallenge/channel.zip")
+current_directory = os.getcwd()
+zip = zipfile.ZipFile(os.path.join(current_directory, "supportfiles/channel.zip"))
 
 # found from the info file in the zip
 init_num = "90052"
